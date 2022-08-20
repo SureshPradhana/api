@@ -19,7 +19,7 @@ const PostSchema = new mongoose.Schema(
     },
     publicstatus:{
       type:Boolean,
-      default:true;
+      default:true,
 
     }
   },
