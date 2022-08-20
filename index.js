@@ -27,7 +27,9 @@ app.use(morgan("common"));
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
 app.use("/api/posts", postRoute);
-
+app.get("/",(req,res)=>{
+  rs.send("this is an api");
+});
 app.listen(PORT, () => {
   console.log("Backend server is running!");
 });
