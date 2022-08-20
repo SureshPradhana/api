@@ -17,6 +17,11 @@ const PostSchema = new mongoose.Schema(
       type: Array,
       default: [],
     },
+    publicstatus:{
+      type:Boolean,
+      default:true;
+
+    }
   },
   { timestamps: true }
 );

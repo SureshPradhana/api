@@ -2,9 +2,9 @@ const User = require("../models/User");
 const router = require("express").Router();
 const bcrypt = require("bcrypt");
 //test
-router.get("/",(req,res)=>{
-  res.send("hi user")
-})
+// router.get("/",(req,res)=>{
+//   res.send("hi user")
+// })
 //update user
 router.put("/:id", async (req, res) => {
   if (req.body.userId === req.params.id || req.body.isAdmin) {
